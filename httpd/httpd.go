@@ -10,7 +10,7 @@ import (
 	"github.com/donkeywon/golib/boot"
 	"github.com/donkeywon/golib/errs"
 	"github.com/donkeywon/golib/runner"
-	"github.com/donkeywon/golib/util/convert"
+	"github.com/donkeywon/golib/util/conv"
 	"github.com/donkeywon/golib/util/httpu"
 )
 
@@ -143,7 +143,7 @@ func logAndRecoverMiddleware(next http.Handler) http.Handler {
 				err := errs.PanicToErr(e)
 				_h.Error("handle req fail, panic occurred", err, logFields(r, w.(*writeOnceRecordResponseWriter), start, end)...)
 				errStr := errs.ErrToStackString(err)
-				httpu.RespRaw(http.StatusInternalServerError, convert.String2Bytes(errStr), w)
+				httpu.RespRaw(http.StatusInternalServerError, conv.String2Bytes(errStr), w)
 			} else {
 				_h.Info("handle req", logFields(r, w.(*writeOnceRecordResponseWriter), start, end)...)
 			}
