@@ -22,8 +22,8 @@ github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/donkeywon/go-flags v1.6.2 h1:8cwGGgIklU1K7RkAR6Xqzlg8lhHn96oU+rAO8UyUcg8=
 github.com/donkeywon/go-flags v1.6.2/go.mod h1:MZF5HKwPltmR6YtOtpFA9w0hgEduk8Eo/QXslznVFeI=
-github.com/donkeywon/golib v0.5.7 h1:gUVR5QMSa+wuF/n0thqoNRd+GVjzJUcypL1RUplK804=
-github.com/donkeywon/golib v0.5.7/go.mod h1:bBjGwd2IRGDIPcRVSKkGf99QYsJb0KVwXmtbvYJbCH0=
+github.com/donkeywon/golib v0.5.9 h1:R+42OwvMil3uFdN0CK4jJC73XtiBguqwlpYKp1BDe7M=
+github.com/donkeywon/golib v0.5.9/go.mod h1:eYEeFVYeDepv1He8xaipVLcd0DR5CFVvjlHy627aWtQ=
 github.com/fatih/color v1.17.0 h1:GlRw1BRJxkpqUCBKzKOw098ed57fEsKeNjpTe3cSjK4=
 github.com/fatih/color v1.17.0/go.mod h1:YZ7TlrGPkiz6ku9fK3TLD/pl3CpsiFyu8N92HLgmosI=
 github.com/fsnotify/fsnotify v1.7.0 h1:8JEhPFa5W2WU7YfeZzPNqzMP6Lwt7L2715Ggo0nosvA=

@@ -4,7 +4,7 @@ go 1.22.5
 
 require (
 	github.com/alitto/pond v1.9.1
-	github.com/donkeywon/golib v0.5.7
+	github.com/donkeywon/golib v0.5.9
 	github.com/prometheus/client_golang v1.19.1
 	github.com/stretchr/testify v1.9.0
 )
