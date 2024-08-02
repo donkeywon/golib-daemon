@@ -93,7 +93,7 @@ func (h *Httpd) buildHandlerChain(next http.Handler) http.Handler {
 	return handler
 }
 
-func logFields(r *http.Request, w *writeOnceRecordResponseWriter, startTs int64, endTs int64) []interface{} {
+func logFields(r *http.Request, w *recordResponseWriter, startTs int64, endTs int64) []interface{} {
 	return []interface{}{
 		"status", w.statusCode,
 		"uri", r.RequestURI,
@@ -141,11 +141,11 @@ func logAndRecoverMiddleware(next http.Handler) http.Handler {
 			e := recover()
 			if e != nil {
 				err := errs.PanicToErr(e)
-				_h.Error("handle req fail, panic occurred", err, logFields(r, w.(*writeOnceRecordResponseWriter), start, end)...)
+				_h.Error("handle req fail, panic occurred", err, logFields(r, w.(*recordResponseWriter), start, end)...)
 				errStr := errs.ErrToStackString(err)
 				httpu.RespRaw(http.StatusInternalServerError, conv.String2Bytes(errStr), w)
 			} else {
-				_h.Info("handle req", logFields(r, w.(*writeOnceRecordResponseWriter), start, end)...)
+				_h.Info("handle req", logFields(r, w.(*recordResponseWriter), start, end)...)
 			}
 		}()
 

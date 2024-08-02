@@ -12,7 +12,7 @@ const (
 )
 
 type Cfg struct {
-	Addr              string        `env:"HTTPD_ADDR"                flag-long:"httpd-listen-addr"         yaml:"addr"      validate:"required" flag-description:"http listen address"`
+	Addr              string        `env:"HTTPD_ADDR"                flag-long:"httpd-addr"                yaml:"addr"      validate:"required" flag-description:"http listen address"`
 	WriteTimeout      time.Duration `env:"HTTPD_WRITE_TIMEOUT"       flag-long:"httpd-write-timeout"       yaml:"writeTimeout"                  flag-description:"maximum duration before timing out writes of the response"`
 	ReadTimeout       time.Duration `env:"HTTPD_READ_TIMEOUT"        flag-long:"httpd-read-timeout"        yaml:"readTimeout"                   flag-description:"maximum duration for reading the entire request, including the body. A zero or negative value means there will be no timeout."`
 	ReadHeaderTimeout time.Duration `env:"HTTPD_READ_HEADER_TIMEOUT" flag-long:"httpd-read-header-timeout" yaml:"readHeaderTimeout"             flag-description:"the amount of time allowed to read request headers"`

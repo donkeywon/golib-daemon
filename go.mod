@@ -4,7 +4,9 @@ go 1.22.5
 
 require (
 	github.com/alitto/pond v1.9.1
-	github.com/donkeywon/golib v0.5.9
+	github.com/arl/statsviz v0.6.0
+	github.com/donkeywon/golib v0.6.3
+	github.com/google/gops v0.3.28
 	github.com/prometheus/client_golang v1.19.1
 	github.com/stretchr/testify v1.9.0
 )
@@ -21,6 +23,7 @@ require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/donkeywon/go-flags v1.6.2 // indirect
 	github.com/fatih/color v1.17.0 // indirect
+	github.com/felixge/fgprof v0.9.4 // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
 	github.com/gabriel-vasile/mimetype v1.4.5 // indirect
 	github.com/go-ole/go-ole v1.3.0 // indirect
@@ -28,7 +31,9 @@ require (
 	github.com/go-playground/universal-translator v0.18.1 // indirect
 	github.com/go-playground/validator/v10 v10.22.0 // indirect
 	github.com/goccy/go-yaml v1.12.0 // indirect
+	github.com/google/pprof v0.0.0-20240727154555-813a5fbdbec8 // indirect
 	github.com/google/uuid v1.6.0 // indirect
+	github.com/gorilla/websocket v1.5.0 // indirect
 	github.com/klauspost/compress v1.17.9 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.8 // indirect
 	github.com/klauspost/pgzip v1.2.6 // indirect
@@ -37,6 +42,7 @@ require (
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
+	github.com/pkg/profile v1.7.0 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/power-devops/perfstat v0.0.0-20240221224432-82ca36839d55 // indirect
 	github.com/prometheus/client_model v0.6.1 // indirect
